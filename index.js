@@ -54,4 +54,7 @@ client.connect(err => {
     })
 });
 
+app.get("/",(req,res)=>{
+    res.send("This heroku welcome home page....!")
+})
 app.listen(process.env.PORT || port)
